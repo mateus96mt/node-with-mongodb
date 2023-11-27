@@ -104,3 +104,10 @@ const obj ={
 }
 
 console.log(obj.myname())
+
+let test = {
+    param1: 'teste',
+    param2: 'teste2'
+}
+const {param1:mytest, param2:my2} = test;
+console.log({tesmytestte:mytest, my2: my2})
