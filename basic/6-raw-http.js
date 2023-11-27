@@ -20,3 +20,12 @@ request.on('error', (error) => {
 })
 
 request.end()
+
+function teste(element, index, array){
+    console.log("element: " + element)
+    console.log("index: " + index)
+    console.log("array: " + array)
+}
+
+let a = [1,2,3];
+a.forEach(teste);
