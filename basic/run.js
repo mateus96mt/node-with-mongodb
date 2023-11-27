@@ -96,3 +96,11 @@ yargs.command({
 })
 
 console.log(yargs.argv)
+
+const obj ={
+    myname(){
+        return "my name";
+    }
+}
+
+console.log(obj.myname())
