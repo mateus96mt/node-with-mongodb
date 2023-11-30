@@ -1,4 +1,5 @@
 download mongodb
+download robo 3t
 extract mongodb
 create folder mongodb-data
 add mongodb /bin folder to system path
