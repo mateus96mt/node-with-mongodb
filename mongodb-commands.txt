@@ -1,0 +1,5 @@
+download mongodb
+extract mongodb
+create folder mongodb-data
+add mongodb /bin folder to system path
+mongod --dbpath=/Users/mateu/mongodb-data
