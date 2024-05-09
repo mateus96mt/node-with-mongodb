@@ -1,18 +1,14 @@
 const express = require('express')
-require('./db/mongoose')
+require('./db/mongoose')//load file that conects to database
 const userRouter = require('./routers/user')
 const taskRouter = require('./routers/task')
 
 const app = express()
 const port = process.env.PORT || 3000
 
-//express midleware
-app.use((req, res, next)=>{
-    console.log(req.header('Authorization'))
-    next()
-})
-
 app.use(express.json())
+
+// set routes to use
 app.use(userRouter)
 app.use(taskRouter)
 
