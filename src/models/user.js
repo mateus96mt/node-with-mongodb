@@ -50,13 +50,6 @@ const userSchema = new mongoose.Schema({
     }]
 })
 
-//taks not saved in user but used to map all tasks of user
-userSchema.virtual('tasks', {
-    ref: 'Task',
-    localField: '_id',
-    foreignField: 'owner'
-})
-
 // methods => object context
 userSchema.methods.toJSON = function () {
     const user = this
